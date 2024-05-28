@@ -26,12 +26,13 @@
 
 html{
     font-size: 62.5%;
-    overflow: scroll;
 }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100%;
     background-color: #fff;
     text-align: center;
 }
@@ -140,13 +141,13 @@ body {
 .home-page .intro{
     position: relative;
     padding: 2rem;
-    padding-top: 6.4rem;
+    padding-top: 8.2rem;
 }
 
 .home-page .intro h1 {
     margin-bottom: 20px;
     font-size: 36px;
-    color: #2d3941;
+    color: var(--second-color);
     font-weight: 900;
     margin: 36px;
     text-align: center;
@@ -244,10 +245,80 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
+/*cards section*/
+.background {
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+    padding: 5rem;
+    flex-wrap: wrap; /* Ensure the cards wrap to the next line */
+}
 
+.background h1{
+    top: 0;
+    display: block;
+    font-size: 3rem;
+    margin: 0 8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
 
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 25rem;
+    height: 20rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* Ensure the content is stacked vertically */
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    text-align: center;
+    padding: 20px;
+    transition: .3s linear;
+}
 
+.card:hover {
+    height: 220px;
+    width: 250px;
+}
 
+.card-icon {
+    background-color: var(--main-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    font-size: 24px;
+}
+
+.card-content h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content p i {
+    margin-left: 5px;
+}
 
 .home-page .join-us{
     display: flex;
@@ -282,7 +353,7 @@ body {
 
 .home-page .background{
     width: 100%;
-    background-image: url(./image/images.png);
+    background-image: url(./image/bg2.png);
 }
 
 .marquee{
