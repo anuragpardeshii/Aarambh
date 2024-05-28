@@ -1,6 +1,7 @@
 :root {
     --second-color: #0b2441;
-    --main-color: #007bff;
+    --main-color: #0b2441;
+    /*#007bff;*/
     --red: #e74c3c;
     --orange: #f39c12;
     --white: #fff;
@@ -88,6 +89,7 @@ body {
     background-color: var(--main-color);
     border: none;
     outline: none;
+    color: var(--white);
     border-radius: 50%;
     width: 40px;
     height: 40px;
