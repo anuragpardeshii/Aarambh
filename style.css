@@ -545,3 +545,58 @@ footer {
         margin: 10px 0;
     }
 }
+
+.course{
+    padding-top: 10rem;
+}
+
+
+.course .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+    align-items: flex-start;
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+
+.course .box-container .box{
+    border-radius: 2rem;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.heading{
+    padding-bottom: 1.8rem;
+    border-bottom: var(--border);
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.course .box-container .box .thumb{
+    width: 100%;
+    border-radius: 2rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.course .box-container .box .title{
+    font-size: 2rem;
+    color: var(--black);
+    margin-top: .5rem;
+    padding: .5rem 0;
+}
+
+.course .more-btn{
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course img{
+    width: 90%;
+}
