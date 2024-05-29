@@ -3,7 +3,7 @@
     --main-color: #0b2441;
     /*#007bff;*/
     --red: #e74c3c;
-    --green: #b5e550;
+    --green: #3AA346;
     --yellow: #ffc701;
     --white: #fff;
     --black: #2c3e50;
@@ -280,7 +280,7 @@ body {
 
 .card {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 20rem;
     height: 18rem;
@@ -295,8 +295,7 @@ body {
 }
 
 .card:hover {
-    height: 21rem;
-    width: 23rem;
+    transform: scale(1.15);
 }
 
 .card-icon {
@@ -331,37 +330,6 @@ body {
     margin-left: 5px;
 }
 
-.home-page .join-us{
-    display: flex;
-    width: 100%;
-    position: relative;
-    margin-top: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-page .join-us-left{
-    width: 50%;   
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: flex-start;
-    flex-direction: column;
-}
-
-.home-page .join-us-left h1{
-    font-size: 8rem;   
-    margin: auto;
-    width: 100%;
-}
-
-.home-page .join-us-right{
-    width: 50%;
-}
-.home-page .join-us-right img{
-    height: 50rem;
-}
-
 .marquee{
     position: relative;
     width: 100%;
@@ -380,44 +348,57 @@ body {
 }
 
 /*boxes */
+.careers{
+    background-image: url(./image/gg1.jpg);
+    padding: 3rem;
+}
+
+.careers h1{
+    font-size: 3rem;
+    color: white;
+    padding: 3rem;
+    padding-top: 4rem;
+}
 
 .box-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box {
     background: white;
-    border-radius: 8px;
+    border-radius: 3rem;
+    cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-    max-width: 300px;
-    flex: 1;
+    margin: 2rem;
+    padding: 2rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    transition: .2s linear;
+}
+
+.box:hover{
+    transform: scale(1.09);
+}
+
+.box h3{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.box img{
+    height: 20rem;
+    object-fit: contain;
 }
 
 .box-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-}
-
-.box-header h3 {
-    margin: 0;
-    font-size: 1.2em;
-}
-
-.notification {
-    background: red;
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 0.9em;
 }
 
 .box-content {
@@ -439,4 +420,128 @@ body {
 
 .box-content a:hover {
     text-decoration: underline;
+}
+
+
+
+.join-us {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.join-us-left {
+    margin-right: 20px;
+    text-align: start;
+    margin-left: 5rem;
+    width: 570px;
+}
+.join-us-left h1 {
+    font-size: 8rem;
+    color: var(--main-color);
+}
+
+.join-us-left p {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.join-us-left p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.join-us-right {
+    position: relative;
+    right: 0;
+}
+.join-us-right img {
+    height: 50rem;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-column p, .footer-column ul, .footer-column a {
+    color: #bbb;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    color: #bbb;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
 }
