@@ -3,7 +3,8 @@
     --main-color: #0b2441;
     /*#007bff;*/
     --red: #e74c3c;
-    --orange: #f39c12;
+    --green: #b5e550;
+    --yellow: #ffc701;
     --white: #fff;
     --black: #2c3e50;
     --light-color: #636363;
@@ -116,10 +117,11 @@ body {
     font-size: 2rem;
     padding: 0 1.5rem;
     color: var(--light-color);
+    transition: .3s linear;
 }
 
 .header .nav a:hover{
-    color: var(--main-color);
+    color: var(--yellow);
 }
 
 .header .profile{
@@ -134,16 +136,17 @@ body {
     font-size: 2rem;
     padding: 0 1.5rem;
     color: var(--light-color);
+    transition: .3s linear;
 }
 
 .header .profile a:hover{
-    color: var(--main-color);
+    color: var(--yellow);
 }
 
 .home-page .intro{
     position: relative;
-    padding: 2rem;
-    padding-top: 8.2rem;
+    padding: 2.3rem;
+    padding-top: 7rem;
 }
 
 .home-page .intro h1 {
@@ -234,11 +237,15 @@ body {
     gap: 1rem;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
     width: 220%; 
     height: 100%;
-    animation: marquee 50s linear infinite; 
+    animation: marquee 60s linear infinite; 
 
+}
+
+.home-page .stats span{
+    color: var(--yellow);
 }
 
 .home-page .stats .companies img{
@@ -249,7 +256,18 @@ body {
 }
 /*cards section*/
 .background {
-    justify-content: space-around;
+    background-image: url(./image/bgnew.png);
+}
+
+.background h1{
+    font-size: 3rem;
+    color: white;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.card-container{
+    justify-content: center;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -260,34 +278,25 @@ body {
     flex-wrap: wrap; /* Ensure the cards wrap to the next line */
 }
 
-.background h1{
-    top: 0;
-    display: block;
-    font-size: 3rem;
-    margin: 0 8rem;
-    color: white;
-    padding-bottom: 4rem;
-}
-
 .card {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 25rem;
-    height: 20rem;
-    margin: auto;
+    width: 20rem;
+    height: 18rem;
     display: flex;
     flex-direction: column; /* Ensure the content is stacked vertically */
     align-items: center; /* Center the content horizontally */
     justify-content: center; /* Center the content vertically */
     text-align: center;
+    cursor: pointer;
     padding: 20px;
-    transition: .3s linear;
+    transition: .2s linear;
 }
 
 .card:hover {
-    height: 220px;
-    width: 250px;
+    height: 21rem;
+    width: 23rem;
 }
 
 .card-icon {
@@ -353,11 +362,6 @@ body {
     height: 50rem;
 }
 
-.home-page .background{
-    width: 100%;
-    background-image: url(./image/bg2.png);
-}
-
 .marquee{
     position: relative;
     width: 100%;
@@ -373,4 +377,66 @@ body {
     to {
         transform: translateX(-50%);
     }
+}
+
+/*boxes */
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.notification {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.box-content {
+    margin-top: 10px;
+}
+
+.box-content p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.box-content a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.box-content a:hover {
+    text-decoration: underline;
 }
