@@ -41,55 +41,25 @@
         </div>
     </div>
     <!--header section ends-->
-    <!--about section starts-->
-    <section class="about">    
-        <a href="home.html" class="back-btn" style="justify-content: end;">back</a>
-    <div class="row">
-        <div class="image">
-            <img src="./images/aboutUsimg.png" alt="">
-        </div>
-        <div class="content">
-            <h3>WHY CHOOSE US?</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione veritatis non odio est at obcaecati!</p>
-        <a href="courses.html"class="inline-btn">Our Courses</a>
-        </div>
-    </div>
-    <div class="box-container">
+    <!--register section starts-->
+  <section class="form-container">
+    <form action="" method="post" enctype="multipart/form-data"> <!--important-->
+      <h3>Register new</h3>
+      <p>Your name <span>*</span></p>
+      <input type="text" name="name" placeholder="enter your name" maxlength="100" required class="box">
+      <p>Your email <span>*</span></p>
+      <input type="email" name="email" placeholder="enter your email" maxlength="100" required class="box">
+      <p>Your password <span>*</span></p>
+      <input type="password" name="pass" placeholder="Enter your old pasword" maxlength="50" required class="box">
+      <p>Confirm password <span>*</span></p>
+      <input type="password" name="c_pass" placeholder="Confirm your pasword" maxlength="50" required class="box">
+      <p>Select photo <span>*</span></p>
+      <input type="file" name="image" accept="image/*" class="box">
+      <input type="submit" name="submit" value="register now" class="btn">
 
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <div>
-                <h3>+1k</h3>
-                <span>online courses</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-user-graduate"></i>
-            <div>
-                <h3>+25k</h3>
-                <span>Brilliant Students</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-chalkboard-user"></i>
-            <div>
-                <h3>+5k</h3>
-                <span>Expert Teachers</span>
-            </div>
-        </div>
-
-        <div class="box">
-            <i class="fas fa-briefcase"></i>
-            <div>
-                <h3>100%</h3>
-                <span>Job PLacement</span>
-            </div>
-        </div>
-    </div>
-</section>
-<!--about section ends-->
+    </form>
+  </section>
+  <!--refister section ends-->
 
 </body>
 
