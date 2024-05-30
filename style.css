@@ -8,7 +8,7 @@
     --white: #fff;
     --black: #2c3e50;
     --light-color: #636363;
-    --light-bg: #eee;
+    --light-bg: #f5f7f8;
     --border:.1rem solid rgba(0,0,0,.2);
 }
 * {
@@ -35,7 +35,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--white);
     text-align: center;
 }
 .header {
@@ -75,7 +75,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 3rem;
     padding: .5rem;
-    background-color: #fff;
+    background-color: var(--white);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .header .logo .search-form input {
@@ -181,8 +181,8 @@ body {
 
 .home-page .intro{
     position: relative;
-    padding: 2.3rem;
     padding-top: 7rem;
+    padding-bottom: 2rem;
 }
 
 .home-page .intro h1 {
@@ -317,7 +317,7 @@ body {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--white);
     border-radius: 3rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 23rem;
@@ -465,6 +465,7 @@ body {
 
 .join-us {
     display: flex;
+    background-color: var(--light-bg);
     align-items: center;
     width: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -652,7 +653,11 @@ footer {
 }
 
 .buttons {
-    margin-top: 2.5rem;
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: .5rem;
 }
 .buttons a {
     text-decoration: none;
@@ -665,7 +670,7 @@ footer {
 .buttons .join-free {
     background-color: #0070f3;
     border-radius: 3rem;
-    color: white;
+    color: var(--white);
     padding: 1rem 2rem;
 }
 
@@ -741,6 +746,28 @@ footer {
     font-size: 1.5rem;
     color: var(--light-color);
 }
+
+.candidate-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.candidate-list h1{
+    font-size: 3rem;
+    color: var(--main-color);
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.candidate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+
 
 
 
