@@ -18,6 +18,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
+    flex-wrap: wrap;
     text-decoration: none;
 }
 
@@ -26,9 +27,7 @@
     color: #fff;
 }
 
-html{
-    font-size: 62.5%;
-}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -40,16 +39,15 @@ body {
 }
 .header {
     background-color: #fff;
-    padding: 1rem 0;
+    padding: .5rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     text-align: center;
     justify-content: flex-start;
     position: sticky;
     z-index: 1;
-    position: fixed;
     width: 100%; 
-    padding: 1rem; 
+    padding: .5rem; 
 }
 
 .header .logo {
@@ -59,9 +57,9 @@ body {
 }
 
 .header .logo a{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
-    padding: 0 2rem;
+    padding: 0 1rem;
     text-align: center;
     align-items: center;
     display: flex;
@@ -82,8 +80,8 @@ body {
     border: none;
     outline: none;
     flex: 1;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: .5rem;
+    font-size: 1rem;
     border-radius: 3rem;
 }
 .header .logo .search-form button{
@@ -92,8 +90,8 @@ body {
     outline: none;
     color: var(--white);
     border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,8 +99,8 @@ body {
 }
 
 .header .logo .search-form button img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .header .nav{
@@ -110,12 +108,12 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--main-color);
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .header .nav a{
-    font-size: 2rem;
-    padding: 0 1.5rem;
+    font-size: 1rem;
+    padding: 0 1rem;
     color: var(--light-color);
     transition: .3s linear;
 }
@@ -133,8 +131,8 @@ body {
 }
 
 .header .profile a{
-    font-size: 2rem;
-    padding: 0 1.5rem;
+    font-size: 1rem;
+    padding: 0 1rem;
     color: var(--light-color);
     transition: .3s linear;
 }
@@ -146,11 +144,11 @@ body {
 .header .profilei {
     position: absolute;
     top: 120%; 
-    right: 2rem;
+    right: 1rem;
     background-color: var(--white);
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
-    width: 30rem;
+    width: 15rem;
     transform: scale(0);
     transform-origin: top right;
     transition: .2s linear;
@@ -161,35 +159,35 @@ body {
 }
 
 .header .profilei img {
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: .5rem;
 }
 
 .header .profilei h3 {
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--black);
 }
 
 .header .profilei span {
     color: var(--light-color);
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 
 .home-page .intro{
     position: relative;
-    padding-top: 7rem;
-    padding-bottom: 2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
 }
 
 .home-page .intro h1 {
-    margin-bottom: 3rem;
-    font-size: 4rem;
-    padding-top: 5rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
     color: var(--main-color);
     font-weight: 900;
     text-align: center;
@@ -197,28 +195,28 @@ body {
 
 .home-page .intro .home-search-form{
     border: 1px solid #b3bdc0;
-    border-radius: 3rem;
+    border-radius: 1.5rem;
     display: flex;
     align-items: center;
-    font-size: 2.5rem;
-    height: 6rem;
+    font-size: 2rem;
+    height: 3rem;
     margin: auto;
     text-align: center;
     width: 50%;
 }
 
 .home-page .intro .home-search-form input::placeholder {
-    font-size: 2.5rem; 
-    line-height: 6rem; 
+    font-size: 1.5rem; 
+    line-height: 3rem; 
     color: #888; 
   }
 
 .home-page .intro .home-search-form button{
     background-color: #fff;
     color: #757575;
-    font-size: 2rem;
-    padding: 1.5rem;
-    margin-right: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-right: .5rem;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -226,9 +224,9 @@ body {
 
 .home-page .intro input{
     display: flex;
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin: auto;
-    margin-left: 2rem;
+    margin-left: 1rem;
     text-align: center;
     width: 100%;
 }
@@ -240,7 +238,6 @@ body {
     width: auto;
     justify-content: space-around;
     gap: 1rem;
-    margin-top: -4rem;
     overflow: hidden;
 }
 
@@ -248,14 +245,14 @@ body {
     width: auto;
     display: flex;
     position: relative;
-    height: 30rem;
+    height: 15rem;
 }
 
 .home-page .intro .illustrations .home-img{
     position: relative;
     width: auto;
     display: flex;
-    height: 25rem;
+    height: 15rem;
 }
 
 .home-page .stats{
@@ -266,9 +263,9 @@ body {
 }
 
 .home-page .stats h2{
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     justify-content: center;
 }
 
@@ -277,7 +274,7 @@ body {
     gap: 1rem;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
     width: 220%; 
     height: 100%;
     animation: marquee 60s linear infinite; 
@@ -289,7 +286,7 @@ body {
 }
 
 .home-page .stats .companies img{
-    height: 4rem;
+    height: 2rem;
     overflow: auto;
     align-items: center;
     flex-wrap: nowrap;
@@ -301,34 +298,34 @@ body {
 }
 
 .background h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: white;
-    padding: 2rem;
-    padding-top: 5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
 }
 
 .card-container{
     justify-content: center;
     display: flex;
     align-items: center;
-    gap: 6rem;
-    padding: 5rem;
+    gap: 1.5rem;
+    padding: 2rem;
     flex-wrap: wrap; /* Ensure the cards wrap to the next line */
 }
 
 .card {
     background-color: var(--white);
-    border-radius: 3rem;
+    border-radius: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 23rem;
-    height: 20rem;
+    width: 13rem;
+    height: 12rem;
     display: flex;
     flex-direction: column; /* Ensure the content is stacked vertically */
     align-items: center; /* Center the content horizontally */
     justify-content: center; /* Center the content vertically */
     text-align: center;
     cursor: pointer;
-    padding: 2.5rem;
+    padding: 1rem;
     transition: .2s linear;
 }
 
@@ -339,25 +336,25 @@ body {
 .card-icon {
     background-color: var(--main-color);
     color: white;
-    width: 6rem;
-    height: 6rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto 1rem auto;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .card-content h3 {
     margin: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #333;
 }
 
 .card-content p {
     margin: 0;
-    font-size: 2rem;
+    font-size: 0.8rem;
     color: #777;
     display: flex;
     justify-content: center;
@@ -388,14 +385,14 @@ body {
 /*boxes */
 .careers{
     background-image: url(./image/bg2.png);
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .careers h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: white;
-    padding: 2rem;
-    padding-top: 5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
 }
 
 .box-container {
@@ -406,11 +403,11 @@ body {
 
 .box {
     background: white;
-    border-radius: 3rem;
+    border-radius: 1.5rem;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 2rem;
-    padding: 2rem;
+    margin: 1rem;
+    padding: 1rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -423,12 +420,12 @@ body {
 }
 
 .box h3{
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-bottom: 1rem;
 }
 
 .box img{
-    height: 20rem;
+    height: 10rem;
     width: 100%;
     object-fit: contain;
 }
@@ -447,6 +444,7 @@ body {
 .box-content p {
     font-size: 0.9em;
     line-height: 1.4;
+    max-width: 18rem;
 }
 
 .box-content a {
@@ -469,36 +467,37 @@ body {
     align-items: center;
     width: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 .join-us-left {
     text-align: start;
-    flex: 1;
     position: relative;
     padding-left: 7%;
 }
-.join-us-left h1 {
-    font-size: 6rem;
+.join-us-left h1{
+    font-size: 3rem;
     color: var(--main-color);
+    padding: 1rem;
+    padding-top: 2.5rem;
 }
 
 .join-us-left p {
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--black);
 }
 
 .join-us-right {
     position: relative;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 .join-us-right img {
-    height: 50rem;
+    width: 25rem;
 }
 
 footer {
     background-color: var(--main-color);
     color: #fff;
-    padding: 5rem 0;
+    padding: 2.5rem 0;
     position: relative;
     width: 100%;
 }
@@ -506,6 +505,7 @@ footer {
 .footer-container {
     margin: 0 auto;
     padding: 0 20px;
+    max-width: 70rem;
     width: 100%;
 }
 
@@ -517,18 +517,19 @@ footer {
 
 .footer-column {
     flex: 1;
-    margin: 2.5rem;
+    margin: 1rem;
+    min-width: 15rem;
 }
 
 .footer-column h3 {
-    margin-bottom: 2.5rem;
-    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
 .footer-column p, .footer-column ul, .footer-column a {
     color: #bbb;
-    font-size: 1.8rem;
+    font-size: 1rem;
     text-decoration: none;
 }
 
@@ -560,16 +561,6 @@ footer {
     color: #fff;
 }
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.footer-bottom p {
-    margin: 0;
-    font-size: 14px;
-}
-
 .social-icons {
     display: flex;
     justify-content: center;
@@ -577,8 +568,8 @@ footer {
 
 .social-icons a {
     color: #bbb;
-    font-size: 1.8rem;
-    margin-right: 2rem;
+    font-size: 1rem;
+    margin-right: 1rem;
     transition: color 0.3s;
 }
 
@@ -588,60 +579,60 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 
 .footer-bottom p {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1rem;
     width: 100%;
 }
 
 .course{
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 
 .course .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
-    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    gap:1rem;
     align-items: flex-start;
-    padding-bottom: 5rem;
+    padding-bottom: 2.5rem;
     justify-content: center;
 }
 
 .course .box-container .box{
-    border-radius: 2rem;
+    border-radius: 1rem;
     background-color: var(--white);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .heading{
-    padding-bottom: 1.8rem;
+    padding-bottom: 1rem;
     border-bottom: var(--border);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--black);
     text-transform: capitalize;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .course .box-container .box .thumb{
     width: 100%;
-    border-radius: 2rem;
-    height: 20rem;
+    border-radius: 1rem;
+    height: 10rem;
     object-fit: cover;
 }
 
 .course .box-container .box .title{
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--black);
     margin-top: .5rem;
     padding: .5rem 0;
 }
 
 .course .more-btn{
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
     display: block;
     border-radius: .5rem;
@@ -661,24 +652,24 @@ footer {
 }
 .buttons a {
     text-decoration: none;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.5rem;
     border-radius: .5rem;
-    font-size: 2rem;
-    margin-right: 1rem;
+    font-size: 1rem;
+    margin-right: .5rem;
 }
 
 .buttons .join-free {
     background-color: #0070f3;
-    border-radius: 3rem;
+    border-radius: 2rem;
     color: var(--white);
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
 }
 
 .buttons .business {
     border: 1px solid #0070f3;
     color: #0070f3;
-    border-radius: 3rem;
-    padding: 1rem 2rem;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
 }
 
 .responsive {
@@ -690,60 +681,60 @@ footer {
 .about .row{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .about .row .image{
-    flex: 1 1 40rem;    
+    flex: 1 1 20rem;    
 }
 
 .about .row .image img{
     width: 100%; 
-    height: 50rem;   
+    height: 25rem;   
 }
 
 .about .row .content{
-    flex: 1 1 40rem;    
+    flex: 1 1 20rem;    
     text-align: center;
 }
 
 .about .row .content h3{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--black);    
 }
 
 .about .row .content p{
     line-height: 2;
-    font-size: 1.7rem;
+    font-size: 1rem;
     color: var(--light-color);
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 .about .box-container{
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .about .box-container .box{
-    flex: 1 1 20rem;                    /*important*/
+    flex: 1 1 10rem;                    /*important*/
     display: flex;
     align-items: center;
     background-color: var(--white);
     border-radius: .5rem;
-    padding: 2rem;
-    gap: 2rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .about .box-container .box i{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--main-color);
 }
 
 .about .box-container .box span{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--light-color);
 }
 
@@ -751,14 +742,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .candidate-list h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: var(--main-color);
-    padding: 2rem;
-    padding-top: 5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
 }
 
 .candidate{
@@ -775,10 +766,6 @@ footer {
 
 @media (max-width:1200px){
 
-    body{
-        padding-left: 0;
-    }
-
 
 
 
@@ -786,19 +773,18 @@ footer {
 
 
 @media (max-width:991px){
-    html{
-        font-size: 55%;
+
+    .responsive {
+        display: none;
+      }
+    
+    .join-us-left {
+        padding-left: 0;
     }
 }
 
 @media (max-width: 768px) {
     
-    .header .flex .search-form {
-        position: absolute;
-        
-        clip-path: polygon(0 0, 100% 0, 0 0);
-        transition: .2s linear;
-    }
     .footer-row {
         flex-direction: column;
         align-items: center;
@@ -810,9 +796,6 @@ footer {
 }
 
 @media (max-width: 450px) {
-    html{
-        font-size: 50%;
-    }
 
     
 }
