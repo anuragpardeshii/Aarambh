@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TechNewbies</title>
+    <title> TechNewbies</title>
+        <link rel="icon" type="image/png" href="./image/logo.png"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,10 +37,11 @@
             <a href="contact.html"><span>Contact us</span></a>
         </div>`
 
-        <div class="profile"><i class="fa-solid fa-user"></i>
+        <div class="user-btn"><i class="fa-solid fa-user user-btn-icon"></i>
         </div>
-        <div class="profilei">
-            <img src="./images/profilepic01.png" alt="profile pic" height="100px">
+
+        <div class="profile">
+            <img src="./image/anurag.jpg" alt="profile pic" height="100px">
             <h3>Anurag Pardeshi</h3>
             <span>student</span>
             <a href="myProfile.html" class="btn">view profile</a>
@@ -99,6 +101,7 @@
             <h1>Essential Technical Skills for Today's Learners: A Comprehensive Guide</h1>
             <div class="card-container">
                 <div class="card">
+                    <a href="./WebDevelopment.html">
                     <div class="card-icon">
                         <i class="fa-solid fa-book"></i>
                     </div>
@@ -106,6 +109,7 @@
                         <h3>Web Development</h3>
                         <p>55 Courses <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
+                </a>
                 </div>
 
                 <div class="card">
@@ -295,6 +299,28 @@
         </div>
     </div>
         <!--candidate section ends-->
+        <!--chatbot section starts-->
+        <button class="chatbot-toggler">
+            <span class="material-symbols-rounded">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <div class="chatbot">
+            <header>
+              <h2>Chatbot</h2>
+              <span class="close-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+              <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there 👋<br>How can I help you today?</p>
+              </li>
+            </ul>
+            <div class="chat-input">
+              <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+              <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+          </div>
+        <!--chatbot section ends-->
         <!--footer section starts-->
         <footer>
             <div class="footer-container">

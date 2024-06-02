@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TechNewbies</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,33 +36,36 @@
             <a href="contact.html"><span>Contact us</span></a>
         </div>`
 
+        <div class="user-btn"><i class="fa-solid fa-user user-btn-icon"></i>
+        </div>
+
         <div class="profile">
-            <a href="#"><i class="fa-solid fa-fire"></i> 7 days</a>
-            <a href="myprofile"><i class="fa-solid fa-user"></i> profile</a>
+            <img src="./image/anurag.jpg" alt="profile pic" height="100px">
+            <h3>Anurag Pardeshi</h3>
+            <span>student</span>
+            <a href="myProfile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+                <a href="login.html" class="option-btn">login</a>
+                <a href="register.html" class="option-btn">register</a>
+            </div>
         </div>
     </div>
     <!--header section ends-->
-    <!--register section starts-->
-  <section class="form-container">
-    <img src="./image/register.png" alt="">
-    <form action="" method="post" enctype="multipart/form-data"> <!--important-->
-      <h3>Register new</h3>
-      <p>Your name <span>*</span></p>
-      <input type="text" name="name" placeholder="enter your name" maxlength="100" required class="form-box">
-      <p>Your email <span>*</span></p>
-      <input type="email" name="email" placeholder="enter your email" maxlength="100" required class="form-box">
-      <p>Your password <span>*</span></p>
-      <input type="password" name="pass" placeholder="Enter your old pasword" maxlength="50" required class="form-box">
-      <p>Confirm password <span>*</span></p>
-      <input type="password" name="c_pass" placeholder="Confirm your pasword" maxlength="50" required class="form-box">
-      <p>Select photo <span>*</span></p>
-      <input type="file" name="image" accept="image/*" class="form-box">
-      <input type="submit" name="submit" value="register now" class="form-btn">
-
-    </form>
-  </section>
-  <!--refister section ends-->
-
+    <!--login section starts-->
+    <section class="form-container">
+        <img src="./image/login.png" alt="">
+        <form action="" method="post" > 
+          <h3>Welcome back!</h3>
+          <p>Your email<span>*</span></p>
+          <input type="email" name="email" placeholder="enter your email" maxlength="100" required class="form-box">
+          <p>Your password <span>*</span></p>
+          <input type="password" name="pass" placeholder="Enter your old pasword" maxlength="50" required class="form-box">
+    
+          <input type="submit" name="submit" value="Login" class="form-btn">
+    
+        </form>
+      </section>
+      <!--login section ends-->
 </body>
 
 </html>

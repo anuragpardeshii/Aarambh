@@ -19,7 +19,6 @@
 
 <body>
     <!--header section starts-->
-
     <div class="header">
         <div class="logo">
             <a href="index.html">TechNewbies</a>
@@ -29,11 +28,11 @@
             </form>
         </div>
         <div class="nav">
-            <a href="courses.html"><span>Explore Courses</span></a>
-            <a href="live.html"><span>Live</span></a>
+            <a href="courses.html"><span style="color:#ffc701">Explore Courses</span></a>
+            <a href="Live.html"><span>Live</span></a>
             <a href="about.html"><span>About us</span></a>
             <a href="contact.html"><span>Contact us</span></a>
-        </div>`
+        </div>
 
         <div class="profile">
             <a href="#"><i class="fa-solid fa-fire"></i> 7 days</a>
@@ -41,26 +40,41 @@
         </div>
     </div>
     <!--header section ends-->
-    <!--register section starts-->
-  <section class="form-container">
-    <img src="./image/register.png" alt="">
-    <form action="" method="post" enctype="multipart/form-data"> <!--important-->
-      <h3>Register new</h3>
-      <p>Your name <span>*</span></p>
-      <input type="text" name="name" placeholder="enter your name" maxlength="100" required class="form-box">
-      <p>Your email <span>*</span></p>
-      <input type="email" name="email" placeholder="enter your email" maxlength="100" required class="form-box">
-      <p>Your password <span>*</span></p>
-      <input type="password" name="pass" placeholder="Enter your old pasword" maxlength="50" required class="form-box">
-      <p>Confirm password <span>*</span></p>
-      <input type="password" name="c_pass" placeholder="Confirm your pasword" maxlength="50" required class="form-box">
-      <p>Select photo <span>*</span></p>
-      <input type="file" name="image" accept="image/*" class="form-box">
-      <input type="submit" name="submit" value="register now" class="form-btn">
+    <!--course section starts-->
+    <section class="course">
+        <h1 class="heading">Web Development Courses (Front-end Development)</h1>
+        <div class="box-container">
 
-    </form>
-  </section>
-  <!--refister section ends-->
+            <div class="box">
+                <img src="./courses/HTMLthumbnail.png" class="thumb" alt="">
+                <h3 class="title">HTML Tutorial</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+
+            <div class="box">
+
+                <img src="./courses/CSSthumbnail.png" class="thumb" alt="">
+                <h3 class="title">CSS Tutorial</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+
+            <div class="box">
+                <img src="./courses/JSthubnail.jpeg" class="thumb" alt="">
+                <h3 class="title">JavaScript Tutorial</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+
+            <div class="box">
+                <img src="./courses/BootStrapthubnail.png" class="thumb" alt="">
+                <h3 class="title">Bootstrap Tutorial</h3>
+                <a href="playlist.html" class="inline-btn">view playlist</a>
+            </div>
+        </div>
+        <img src="./courses/Front-end RoadMap.png" alt="">
+    </section>
+    <!--course section ends-->
+
+
 
 </body>
 
