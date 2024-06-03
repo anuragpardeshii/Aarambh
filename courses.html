@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNewbies</title>
+
+    <title> TechNewbies</title>
+        <link rel="icon" type="image/png" href="./image/logo.png"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,24 +21,34 @@
 
 <body>
     <!--header section starts-->
+
     <div class="header">
         <div class="logo">
-            <a href="index.html">TechNewbies</a>
+            <a href="index.html">TechNewbie</a>
             <form action="" method="post" class="search-form">
                 <input type="text" name="search_box" placeholder="search courses..." required>
                 <button type="submit" class="fas fa-search" name="search_box"></button>
             </form>
         </div>
+
         <div class="nav">
-            <a href="courses.html"><span style="color:#ffc701">Explore Courses</span></a>
+            <a href="courses.html"><span>Explore Courses</span></a>
             <a href="live.html"><span>Live</span></a>
             <a href="about.html"><span>About us</span></a>
             <a href="contact.html"><span>Contact us</span></a>
+            <a href="#">Log out</a>
+            <div class="user-btn"><i class="fa-solid fa-user user-btn-icon"></i></div>
         </div>
 
         <div class="profile">
-            <a href="#"><i class="fa-solid fa-fire"></i> 7 days</a>
-            <a href="myprofile"><i class="fa-solid fa-user"></i> profile</a>
+            <img src="./image/anurag.jpg" alt="profile pic" height="100px">
+            <h3>Anurag Pardeshi</h3>
+            <span>student</span>
+            <a href="myProfile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+                <a href="login.html" class="option-btn">login</a>
+                <a href="register.html" class="option-btn">register</a>
+            </div>
         </div>
     </div>
     <!--header section ends-->
