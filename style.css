@@ -1209,3 +1209,32 @@ header h2 {
 }
 
 @media (max-width: 450px) {}
+
+/* Styling Roadmap Button */
+.roadmap{
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    color: var(--white);
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-top: .5rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+.roadmapbtn{
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--main-color);
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-top: .5rem;
+    text-align: center;
+}
