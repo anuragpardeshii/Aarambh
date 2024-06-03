@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor's profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+  <!--sider bar menu ends-->
+  <section class="flex">
+    <a href="home.html" class="logo">TechNewbies</a>
+          
+      <form action="" method="post" class="search-form">
+          <input type="text" name="search_box" placeholder="search courses..."
+          required maxlength="100">
+          <button type="submit" class="fas fa-search" name="search_box"></button>
+      </form>
+
+      <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class='fas fa-search'></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+          <img src="./images/profilepic01.png" alt="profile pic" height="100px">
+          <h3>Anurag Pardeshi</h3>
+          <span>student</span>
+          <a href="profile.html" class="btn">view profile</a>
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+          </div>
+      </div>
+  </section>
+  </header>
+  <!--sider bar menu ends-->
+  <!--sider bar menu starts-->
+  <section class="side-bar">
+      <div class="close-side-bar">
+          <i class="fas fa-times"></i>
+      </div>
+      <div class="profile">
+          <img src="./images/profilepic01.png" alt="profile pic" height="100px">
+          <h3>Anurag Pardeshi</h3>
+          <span>student</span>
+          <a href="profile.html" class="btn">view profile</a>
+      </div>
+      <div class="nav-bar">
+        <a href="home.html"><i class="fas fa-home"></i><span> Home</span></a>
+        <a href="about.html"><i class="fas fa-question"></i><span>&nbsp;  About us</span></a>
+        <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+        <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+        <a href="contact.html"><i class="fas fa-headset"></i><span> Contact us</span></a>
+      </div>
+  </section>
+  <!--sider bar menu ends-->
+  <!--contact section starts-->
+  <section class="contact">
+
+    <div class="row">
+
+      <div class="image">
+        <img src="./images/contactUsimg.png" alt="">
+      </div>
+
+      <form action="" method="post">
+        <h3>get in touch</h3>
+        <input type="text" placeholder="enter your name" required maxlength="100" name="name" class="box">
+        <input type="email" placeholder="enter your email" required maxlength="100" name="email" class="box">
+        <input type="number" placeholder="enter your number" required maxlength="100" name="number" class="box">
+        <textarea name="msg" id="" class="box" placeholder="enter your message" required cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="inline-btn" name="submit">
+      </form>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <i class="fas fa-phone"></i>
+        <h3>Phone number</h3>
+        <a href="tel:1234567890">+91 9876543210</a>
+        
+        <a href="tel:1234565432">+91 9876543210</a>
+      </div>
+    
+
+      <div class="box">
+        <i class="fas fa-envelope"></i>
+        <h3>email address</h3>
+        <a href="mailto: pardeshianurag22@gmail.com">pardeshianurag22@gmail.com</a>
+
+        <a href="mailto: anuragpardeshi2001@gmail.com">anuragpardeshi2001@gmail.com</a>
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Office address</h3>
+        <a href="#">Kailod Kartal, By-Pass Road, Indore, Madhya Pradesh</a>
+      </div>
+    </div>
+
+  </section>
+  <!--contact section ends-->
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
