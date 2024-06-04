@@ -1417,12 +1417,13 @@ header h2 {
 
 .side-profile{
     display: flex;
-    align-items: center;
     flex-direction: column;
     margin: 1rem;
     min-width: 22rem;
     gap: 1rem;
 }
+
+
 
 .side-profile img{
     height: 10rem;
@@ -1431,6 +1432,14 @@ header h2 {
 
 .side-profile h1{
     font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.side-personal-box{
+    background-color: var(--white);
+    border-radius: 2rem;
+    gap: 1rem;
+    padding: 1.5rem;
 }
 
 .main-profile{
@@ -1444,18 +1453,11 @@ header h2 {
 
 .main-profile h1{
     font-size: 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .main-profile img{
     height: 7rem;
-}
-
-.side-personal-box{
-    background-color: var(--white);
-    border-radius: 2rem;
-    width: 100%;
-    padding: 2rem;
 }
 
 .personal-box{
@@ -1705,4 +1707,42 @@ header h2 {
     width: 2rem;
     background-color: var(--light-bg);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);         /*important*/
+}
+
+/*work experience*/
+.inner-content{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+hr{
+    border: 0.7px solid black;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-content p{
+    max-width: none;
+    flex-wrap: nowrap;
+}
+
+.Links img{
+    width: 3rem;
+    margin-left: 2rem;
+    height: auto;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+}
+
+.skills img{
+    height: 4rem;
+    gap: 1rem;
 }
