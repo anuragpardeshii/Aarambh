@@ -1407,7 +1407,6 @@ header h2 {
     transition: .3s linear;
 }
 
-<<<<<<< HEAD
 /*my profile section*/
 .profile-section{
     display: flex;
@@ -1514,7 +1513,6 @@ header h2 {
 .certificates:hover{
     transform: scale(1.4);
 }
-=======
 /* watch video */
 
 .watch-video{
@@ -1708,4 +1706,3 @@ header h2 {
     background-color: var(--light-bg);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);         /*important*/
 }
->>>>>>> e0ac151cd829f73d6cb445935b88aaed58dd9d73
