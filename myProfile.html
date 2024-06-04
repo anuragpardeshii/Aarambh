@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNewbies</title>
+
+    <title> TechNewbies</title>
+    <link rel="icon" type="image/png" href="./image/logo.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,27 +24,115 @@
 
     <div class="header">
         <div class="logo">
-            <a href="index.html">TechNewbies</a>
+            <a href="index.html">TechNewbie</a>
             <form action="" method="post" class="search-form">
                 <input type="text" name="search_box" placeholder="search courses..." required>
                 <button type="submit" class="fas fa-search" name="search_box"></button>
             </form>
         </div>
+
         <div class="nav">
             <a href="courses.html"><span>Explore Courses</span></a>
             <a href="live.html"><span>Live</span></a>
             <a href="about.html"><span>About us</span></a>
             <a href="contact.html"><span>Contact us</span></a>
-        </div>`
+            <a href="#">Log out</a>
+            <div class="user-btn"><i class="fa-solid fa-user user-btn-icon"></i></div>
+        </div>
 
         <div class="profile">
-            <a href="#"><i class="fa-solid fa-fire"></i> 7 days</a>
-            <a href="myprofile"><i class="fa-solid fa-user"></i> profile</a>
+            <img src="./image/anurag.jpg" alt="profile pic" height="100px">
+            <h3>Anurag Pardeshi</h3>
+            <span>student</span>
+            <a href="myProfile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+                <a href="login.html" class="option-btn">login</a>
+                <a href="register.html" class="option-btn">register</a>
+            </div>
         </div>
     </div>
     <!--header section ends-->
-        
+    <!--profile section starts-->
+    <div class="profile-section">
+        <div class="side-profile">
+            <div class="side-personal-box">
+                <img src="./image/anurag.jpg" alt=""><br>
+                <span>Anurag Pardeshi</span>
+                <p>@pardeshianurag22</p>
+                <p>Full Stack Developer</p>
+            </div>
+            <div class="side-personal-box">
+                <h1>Personal Information</h1>
+                <p>pardeshianurag22@gmail.com</p>
+                <p>+91-8435304050</p>
+                <p>Indore</p>
+            </div>
+            <div class="side-personal-box">
+                <h1>My Resume</h1>
+                <a href="#">Anurag-Pardesho-resume.pdf</a>
+            </div>
+        </div>
 
+        <div class="main-profile">
+            <div class="personal-box">
+                <h1>My Badges</h1>
+                <img src="./image/c++badge.png" alt="">
+                <img src="./image/javaBadge.png" alt="">
+                <img src="./image/SQL badge.png" alt="">
+                <img src="./image/SQL badge.png" alt="">
+            </div>
+            
+            <div class="personal-box">
+                <div class="activity-chart">
+                    <div class="header1">
+                        <span>72 submissions in the past one year</span>
+                        <div class="stats1">
+                            <span>Total active days: 18</span>
+                            <span>Max streak: 16</span>
+                        </div>
+                    </div>
+                    <div class="months">
+                        <span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>June</span>
+                    </div>
+                    <img src="./image/activity-bar.png" alt="">
+                </div>
+            </div>
+
+            <div class="personal-box">
+                <h1>My Certifications</h1>
+                <div class="certifi">
+                <div class="certificates">
+                    <img src="./image/c certificate.png" alt="">
+                </div>
+                <div class="certificates">
+                    <img src="./image/c++ certificate.png" alt="">
+                </div>
+                <div class="certificates">
+                    <img src="./image/Prayatan.jpeg" alt="">
+                </div>
+                </div>
+            </div>
+
+
+            <div class="personal-box">
+                <h1>Work Experience</h1>
+            </div>
+
+            <div class="personal-box">
+                <h1>Education</h1>
+            </div>
+
+            <div class="personal-box">
+                <h1>Links</h1>
+            </div>
+
+
+            <div class="personal-box">
+                <h1>Skills</h1>
+            </div>
+
+        </div>
+        <!--profile section starts-->
 </body>
 
 </html>
