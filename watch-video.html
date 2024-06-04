@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <!--header section starts-->
+
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">TechNewbies</a>
+                <form action="" method="post" class="search-form">
+                    <input type="text" name="search_box" placeholder="search courses..." required>
+                    <button type="submit" class="fas fa-search" name="search_box"></button>
+                </form>
+            </div>
+            <div class="nav">
+                <a href="courses.html"><span>Explore Courses</span></a>
+                <a href="live.html"><span>Live</span></a>
+                <a href="about.html"><span>About us</span></a>
+                <a href="contact.html"><span>Contact us</span></a>
+            </div>`
+    
+            <div class="user-btn"><i class="fa-solid fa-user user-btn-icon"></i>
+            </div>
+    
+            <div class="profile">
+                <img src="./image/anurag.jpg" alt="profile pic" height="100px">
+                <h3>Anurag Pardeshi</h3>
+                <span>student</span>
+                <a href="myProfile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+                </div>
+            </div>
+        </div>
+        <!--header section ends-->
+        <!--watch video section starts-->
+    <section class="watch-video">
+
+        <div class="video-details">
+            <video src="./video/HTMLvideo.mp4" class="video" poster="./image/HTMLthumbnail.png" 
+            controls autoplay></video>
+          <h3 class="title">HTML Tutorial -Part1</h3>
+          <div class="info">
+              <p><i class="fas fa-calendar"></i><span>21-25-2024</span></p>
+              <p><i class="fas fa-heart"></i><span>45 likes</span></p>
+          </div>
+          <div class="tutor">
+              <img src="./image/teacherpic03.png" alt="">
+              <div>
+                  <h3>John Deo</h3>
+                  <span>developer</span>
+              </div>
+          </div>
+          <form action="" method="post" class="flex">
+              <a href="playlist.html" class="inline-btn"> view playlist</a>
+              <button type="submit"><i class="fa-regular fa-heart"></i><span>like</span></button>
+          </form>
+          <div class="description">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi alias exercitationem,repellat quidem cum reprehenderit nulla consequuntur laudantium pariatur rem, maxime dolorum ipsa! Explicabo molestias soluta doloribus fuga, hic nulla!</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi alias exercitationem,repellat quidem cum reprehenderit nulla consequuntur laudantium pariatur rem, maxime dolorum ipsa! Explicabo molestias soluta doloribus fuga, hic nulla!</p>
+          </div>
+      </section>
+  
+    <!--watch video section ends-->
+    <!--Comments section ends-->
+    <section class="comments">
+      
+      <h1 class="heading">Add a comment</h1>
+  
+      <form action="" class="add-comment">
+          <textarea name="comment_box" placeholder="write your comment..." maxlength="1000" cols="30" rows="10" id="" required></textarea>
+          <input type="submit" value="add-comment" name="add-comment" class="inline-btn">
+      </form>
+      <h1 class="heading">6 comments</h1>
+  
+      <div class="show-comments">
+  
+          <div class="box">
+              <div class="user">
+                  <img src="./image/profilepic01.png" alt="">
+                  <div>
+                      <h3>Nishkarsh Dubey</h3>
+                      <span>25-21-2024</span>
+                  </div>
+              </div>
+              <p class="text">this is a comment from Nishkarsh Dubey</p>
+              <form action="" method="post" class="flex-btn">
+                  <button type="text" name="edit_comment" class="inline-option-btn">edit comment</button>
+                  <button type="text" name="delete_comment" class="inline-delete-btn">delete comment</button>
+              </form>
+          </div>
+  
+          <div class="box">
+              <div class="user">
+                  <img src="./image/profilepic02.png" alt="">
+                  <div>
+                      <h3>Nandini Rathore</h3>
+                      <span>21-25-2024</span>
+                  </div>
+              </div>
+              <p class="text">wow amazing video!
+                  thanks for the source code!
+              </p>
+          </div>
+  
+          <div class="box">
+              <div class="user">
+                  <img src="./image/profilepic02.png" alt="">
+                  <div>
+                      <h3>Priyanshi Rajore</h3>
+                      <span>21-25-2024</span>
+                  </div>
+              </div>
+              <p class="text">wow amazing video!
+                  thanks for the source code!
+              </p>
+          </div>
+  
+          <div class="box">
+              <div class="user">
+                  <img src="./image/profilepic02.png" alt="">
+                  <div>
+                      <h3>Aishwariya Nayak</h3>
+                      <span>21-25-2024</span>
+                  </div>
+              </div>
+              <p class="text">wow amazing video!
+                  thanks for the source code!
+              </p>
+          </div>
+  
+          <div class="box">
+              <div class="user">
+                  <img src="./image/profilepic01.png" alt="">
+                  <div>
+                      <h3>Shashank Pathey</h3>
+                      <span>21-25-2024</span>
+                  </div>
+              </div>
+              <p class="text">wow amazing video!
+                  thanks for the source code!
+              </p>
+          </div>
+  
+      </div>
+  
+    </section>
+    <!--Comments video section ends-->
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="./script.js"></script>
+</body>
+</html>
