@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> TechNewbies</title>
-        <link rel="icon" type="image/png" href="./image/logo.png"/>
+    <title>TechNewbies</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,41 +19,33 @@
 
 <body>
     <!--header section starts-->
-
     <div class="header">
         <div class="logo">
-            <a href="index.html">TechNewbie</a>
+            <a href="index.html">TechNewbies</a>
             <form action="" method="post" class="search-form">
                 <input type="text" name="search_box" placeholder="search courses..." required>
                 <button type="submit" class="fas fa-search" name="search_box"></button>
             </form>
         </div>
-
         <div class="nav">
-            <a href="courses.html"><span>Explore Courses</span></a>
-            <a href="live.html"><span>Live</span></a>
+            <a href="courses.html"><span style="color:#ffc701">Explore Courses</span></a>
+            <a href="Live.html"><span>Live</span></a>
             <a href="about.html"><span>About us</span></a>
             <a href="contact.html"><span>Contact us</span></a>
-            <a href="#">Log out</a>
-            <div class="user-btn"><i class="fa-solid fa-user user-btn-icon"></i></div>
         </div>
 
         <div class="profile">
-            <img src="./image/anurag.jpg" alt="profile pic" height="100px">
-            <h3>Anurag Pardeshi</h3>
-            <span>student</span>
-            <a href="myProfile.html" class="btn">view profile</a>
-            <div class="flex-btn">
-                <a href="login.html" class="option-btn">login</a>
-                <a href="register.html" class="option-btn">register</a>
-            </div>
+            <a href="#"><i class="fa-solid fa-fire"></i> 7 days</a>
+            <a href="myprofile"><i class="fa-solid fa-user"></i> profile</a>
         </div>
     </div>
     <!--header section ends-->
     <!--course section starts-->
-    <section class="course">
+    <section class="course" >
         <h1 class="heading">Web Development Courses (Front-end Development)</h1>
-        <img src="./courses/Front-end RoadMap.png" alt="">
+        <!-- <img src="./courses/Front-end RoadMap.png" alt=""> -->
+        <a href="./courses/Front-end RoadMap.png" class="inline-btn">Download Complete Web Development (Front-end) Roadmap!</a>
+        <br>
         <div class="box-container">
 
             <div class="box">
@@ -85,7 +75,9 @@
         </div>
 
         <h1 class="heading">Web Development Courses (Backend Development)</h1>
-        <img src="./courses/Back-end RoadMap.jpeg" alt="">
+        <!-- <img src="./courses/Back-end RoadMap.jpeg" alt=""> -->
+        <a href="./courses/Back-end RoadMap.jpeg" class="inline-btn">Download Complete Web Development (back-end) Roadmap!</a>
+
         <div class="box-container">
 
             <div class="box">
@@ -114,7 +106,8 @@
             </div>
         </div>
         <h1 class="heading">Data Science</h1>
-        <img src="./courses/DataScience RoadMap.png" alt="">
+        <!-- <img src="./courses/DataScience RoadMap.png" alt=""> -->
+        <a href="./courses/DataScience RoadMap.png" class="inline-btn">Download Complete Data Science Roadmap!</a>
         <div class="box-container">
 
             <div class="box">
@@ -145,6 +138,7 @@
         </div>
 
         <h1 class="heading">Cybersecurity</h1>
+        <a href="./courses/DataScience RoadMap.png" class="inline-btn">Download Complete Cybersecurity Roadmap!</a>
 
         <div class="box-container">
 
@@ -175,119 +169,123 @@
         </div>
 
         <h1 class="heading">Cloud Computing</h1>
+        <a href="./courses/cloudroadmap.png" class="inline-btn">Download Complete Cloud Computing Roadmap!</a>
 
         <div class="box-container">
 
             <div class="box">
-                <img src="./courses/CloudInfrastructureThumbnail.jpeg" class="thumb" alt="">
-                <h3 class="title">Cloud Infrastructure</h3>
+                <img src="./images/HTMLthumbnail.png" class="thumb" alt="">
+                <h3 class="title">HTML Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/CloudSecurityThumbnail.jpeg" class="thumb" alt="">
-                <h3 class="title">Cloud Security</h3>
+                <img src="./images/BootStrapthubnail.png" class="thumb" alt="">
+                <h3 class="title">Bootstrap Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/serverlesscomputingthumbnail.jpg" class="thumb" alt="">
-                <h3 class="title">Serverless Computing</h3>
+                <img src="./images/jQuerythubnail.png" class="thumb" alt="">
+                <h3 class="title">jQuery Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/cloudcomputingarchitecturethumbnail.jfif" class="thumb" alt="">
-                <h3 class="title">Cloud Architecture</h3>
+                <img src="./images/Reactthumbnail.webp" class="thumb" alt="">
+                <h3 class="title">React Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
         </div>
 
         <h1 class="heading">Artificial Intelligence</h1>
+        <a href="./courses/airoadmap.png" class="inline-btn">Download Complete Artificial Intelligence Roadmap!</a>
 
         <div class="box-container">
 
             <div class="box">
-                <img src="./courses/Machine Learning.jpg" class="thumb" alt="">
-                <h3 class="title">Machine Learning</h3>
+                <img src="./images/HTMLthumbnail.png" class="thumb" alt="">
+                <h3 class="title">HTML Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/deeplearningthumbnail.png" class="thumb" alt="">
-                <h3 class="title">Deep Learning</h3>
+                <img src="./images/BootStrapthubnail.png" class="thumb" alt="">
+                <h3 class="title">Bootstrap Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/nlpthumbnail.jpg" class="thumb" alt="">
-                <h3 class="title">Natural Language Processing (NLP)</h3>
+                <img src="./images/jQuerythubnail.png" class="thumb" alt="">
+                <h3 class="title">jQuery Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/ComputerVisionthumbnail.webp" class="thumb" alt="">
-                <h3 class="title">Computer Vision</h3>
+                <img src="./images/Reactthumbnail.webp" class="thumb" alt="">
+                <h3 class="title">React Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
         </div>
 
         <h1 class="heading">DevOps</h1>
+        <a href="./courses/devops-roadmap.png" class="inline-btn">Download Complete DevOps Roadmap!</a>
 
         <div class="box-container">
 
             <div class="box">
-                <img src="./courses/versioncontrolsystemthumbnail.png" class="thumb" alt="">
-                <h3 class="title">Version Control Systems</h3>
+                <img src="./images/HTMLthumbnail.png" class="thumb" alt="">
+                <h3 class="title">HTML Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
 
             <div class="box">
-                <img src="./courses/infrastructureascodthumbnail.jpg" class="thumb" alt="">
-                <h3 class="title">Infrastructure As Code - IaC</h3>
+                <img src="./images/BootStrapthubnail.png" class="thumb" alt="">
+                <h3 class="title">Bootstrap Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/monitoringandloggingthumbnail.avif" class="thumb" alt="">
-                <h3 class="title">Monitoring And Logging</h3>
+                <img src="./images/jQuerythubnail.png" class="thumb" alt="">
+                <h3 class="title">jQuery Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/PerformanceMonitoringThumbnail.webp" class="thumb" alt="">
-                <h3 class="title">Performance Monitoring</h3>
+                <img src="./images/Reactthumbnail.webp" class="thumb" alt="">
+                <h3 class="title">React Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
         </div>
 
         <h1 class="heading">Internet of Things (IoT)</h1>
+        <a href="./courses/IoT-Roadmap-image.jpg" class="inline-btn">Download Complete IoT Roadmap!</a>
 
         <div class="box-container">
 
             <div class="box">
-                <img src="./courses/communicationprotocolsthumbnail.png" class="thumb" alt="">
-                <h3 class="title">Communication Protocols</h3>
+                <img src="./images/HTMLthumbnail.png" class="thumb" alt="">
+                <h3 class="title">HTML Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
 
             <div class="box">
-                <img src="./courses/platformthumbnail.jpg" class="thumb" alt="">
-                <h3 class="title">Platforms And Services</h3>
+                <img src="./images/BootStrapthubnail.png" class="thumb" alt="">
+                <h3 class="title">Bootstrap Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/iosecuritythumbnail.jpg" class="thumb" alt="">
-                <h3 class="title">IoT Security</h3>
+                <img src="./images/jQuerythubnail.png" class="thumb" alt="">
+                <h3 class="title">jQuery Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
 
             <div class="box">
-                <img src="./courses/datanalyticsthumbnal.png" class="thumb" alt="">
-                <h3 class="title">Data Analytics</h3>
+                <img src="./images/Reactthumbnail.webp" class="thumb" alt="">
+                <h3 class="title">React Tutorial</h3>
                 <a href="playlist.html" class="inline-btn">view playlist</a>
             </div>
         </div>
