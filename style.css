@@ -444,7 +444,11 @@ body {
 
 .box h3 {
     font-size: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+.box span{
+    color: var(--yellow);
 }
 
 .box img {
@@ -1214,7 +1218,6 @@ header h2 {
 
 @media (max-width: 450px) {}
 
-<<<<<<< HEAD
 /* Styling Roadmap Button */
 .roadmap{
     border-radius: .5rem;
@@ -1243,9 +1246,6 @@ header h2 {
     margin-top: .5rem;
     text-align: center;
 }
-=======
-
-
 
 /* playlist box making */
 
@@ -1741,8 +1741,6 @@ header h2 {
     background-color: var(--light-bg);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);         /*important*/
 }
->>>>>>> e0ac151cd829f73d6cb445935b88aaed58dd9d73
-
 /* Flipcard Section In About Section */
 .flip-card {
     background-color: transparent;
@@ -1824,4 +1822,9 @@ hr{
 .skills img{
     height: 4rem;
     gap: 1rem;
+}
+
+.live{
+    background-image: url(./image/whitebg.jpg);
+    padding-top: 6rem;
 }
