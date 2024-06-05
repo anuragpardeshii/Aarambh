@@ -100,3 +100,21 @@ sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 
+///mobile header menu
+const toggleMenuClicked = () => {
+    const body = document.body;
+    const openIcon = document.getElementById("open-icon");
+    const closeIcon = document.getElementById("close-icon");
+  
+    body.classList.toggle("open");
+  
+    if (body.classList.contains("open")) {
+      openIcon.style.display = "none";
+      closeIcon.style.display = "block";
+    } else {
+      openIcon.style.display = "block";
+      closeIcon.style.display = "none";
+    }
+  };
+  
+

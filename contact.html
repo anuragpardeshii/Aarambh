@@ -1,11 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US</title>
+    <link rel="icon" type="image/png" href="./image/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-     
+    <!--header section starts-->
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">TechNewbie</a>
+            <form action="" method="post" class="search-form">
+                <input type="text" name="search_box" placeholder="search courses..." required>
+                <button type="submit" class="fas fa-search" name="search_box"></button>
+            </form>
+        </div>
+
+        <div class="nav">
+            <a href="courses.html"><span>Explore Courses</span></a>
+            <a href="live.html"><span>Live</span></a>
+            <a href="about.html"><span>About us</span></a>
+            <a href="contact.html" style="color: #007bff"><span>Contact us</span></a>
+            <a href="#">Log out</a>
+            <div class="user-btn"><i class="fa-solid fa-user user-btn-icon"></i></div>
+        </div>
+
+        <div class="profile">
+            <img src="./image/anurag.jpg" alt="profile pic" height="100px">
+            <h3>Anurag Pardeshi</h3>
+            <span>student</span>
+            <a href="myProfile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+                <a href="login.html" class="option-btn">login</a>
+                <a href="register.html" class="option-btn">register</a>
+            </div>
+        </div>
+    </div>
+    <!--header section ends-->
+    <!-- contactUs section start -->
+    <div class="contactus">
+        <div class="title">
+            <h2>Get in Touch with us</h2>
+        </div>
+        <div class="cbox">
+            <!-- Form Bar -->
+            <div class="content form">
+                <h3>send message</h3>
+                <form>
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="john">
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="Doe">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="text" placeholder="johndeo@email.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="text" placeholder="+91 123 454 7896">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea placeholder="Write your message here...."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Info Bar -->
+            <div class="content info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Sage University, Indore</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:yaghya24chouksey@gmail.com">yaghya24chouksey@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+919825642145">+91 982 564 2145</a>
+                    </div>
+                    <!-- Social media link -->
+                    <ul class="sci">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Map Bar -->
+            <div class="content map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.46461641789!2d75.84938557475894!3d22.636459430627838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e70944c157f1%3A0x6bfcff54a729dbb5!2sSAGE%20University%2C%20Indore!5e0!3m2!1sen!2sin!4v1717534821431!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
